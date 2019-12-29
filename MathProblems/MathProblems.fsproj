@@ -6,10 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="modules\Common.fs" />
     <Compile Include="modules\FibonacciSequence.fs" />
     <Compile Include="P001.fs" />
     <Compile Include="P002.fs" />
     <Compile Include="P003.fs" />
+    <Compile Include="P004.fs" />
+    <Compile Include="P005.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

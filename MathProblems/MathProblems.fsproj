@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="modules\FibonacciSequence.fs" />
+    <Compile Include="P001.fs" />
+    <Compile Include="P002.fs" />
+    <Compile Include="P003.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

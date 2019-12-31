@@ -1,9 +1,9 @@
 ﻿open System
 
-open P011
+open P013
 
 [<EntryPoint>]
 let main argv =
-    printfn "%d" solve
+    printfn "%A" solve
     Console.ReadKey() |> ignore
     0

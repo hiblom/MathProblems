@@ -30,6 +30,13 @@
     <Compile Include="P001-020\P019.fs" />
     <Compile Include="P001-020\P020.fs" />
     <Compile Include="P021.fs" />
+    <Compile Include="P022.fs" />
+    <Compile Include="P023.fs" />
+    <Compile Include="P024.fs" />
+    <Compile Include="P025.fs" />
+    <Compile Include="P026.fs" />
+    <Compile Include="P027.fs" />
+    <Compile Include="P028.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

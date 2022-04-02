@@ -43,6 +43,13 @@
     <Compile Include="P032.fs" />
     <Compile Include="P033.fs" />
     <Compile Include="P034.fs" />
+    <Compile Include="P035.fs" />
+    <Compile Include="P036.fs" />
+    <Compile Include="P037.fs" />
+    <Compile Include="P038.fs" />
+    <Compile Include="P039.fs" />
+    <Compile Include="P040.fs" />
+    <Compile Include="P067.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

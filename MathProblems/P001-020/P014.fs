@@ -11,5 +11,5 @@ let collatz_chain_length n =
 let solve =
     seq {2..999999}
     |> Seq.map(fun i -> (i, collatz_chain_length i))
-    |> Seq.maxBy(fun (i, c) -> c)
+    |> Seq.maxBy snd
     |> fst

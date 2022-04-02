@@ -8,7 +8,7 @@ let rec gcd (a:int64) (b:int64) =
 let lcm (a:int64) (b:int64) =
     a * b / gcd a b
 
-let is_prime (n:int64) =
+let isPrime (n:int64) =
     if n < 2L then
         false
     elif n = 2L || n = 3L then
@@ -20,3 +20,17 @@ let is_prime (n:int64) =
         let f = seq {2..ub} |> Seq.takeWhile(fun i -> n % int64 i <> 0L) |> Seq.last
         //let f = seq { 2..sq } |> Seq.takeWhile(fun i -> n % int64 i <> 0L) |> Seq.last
         f = ub
+
+let isPandigital (n:int64) (minDigit:int) (maxDigit:int) =
+    let digits = List.unfold(fun a -> if a > 0L then Some(a % 10L, a / 10L) else None ) n
+    if digits |> List.exists(fun a -> a < int64 minDigit || a > int64 maxDigit) then
+        false
+    else
+        digits |>
+        List.sort |>
+        List.pairwise |>
+        List.exists(fun (a,b) -> a = b) |>
+        not
+
+
+    

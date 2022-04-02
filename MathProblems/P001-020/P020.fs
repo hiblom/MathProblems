@@ -4,6 +4,7 @@ open System
 
 let solve =
     seq {1..100}
-    |> Seq.fold (fun a e -> a * bigint e) (bigint 1)
+    |> Seq.map(bigint)
+    |> Seq.reduce((*))
     |> string
-    |> Seq.sumBy (Char.GetNumericValue >> int)
+    |> Seq.sumBy(fun c -> int c - int '0')

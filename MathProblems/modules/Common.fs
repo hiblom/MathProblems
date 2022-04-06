@@ -11,15 +11,15 @@ let lcm (a:int64) (b:int64) =
 let isPrime (n:int64) =
     if n < 2L then
         false
-    elif n = 2L || n = 3L then
+    elif n = 2L then
         true
     elif n % 2L = 0L then
         false
     else
-        let ub = (double n |> sqrt |> int) + 1
-        let f = seq {2..ub} |> Seq.takeWhile(fun i -> n % int64 i <> 0L) |> Seq.last
-        //let f = seq { 2..sq } |> Seq.takeWhile(fun i -> n % int64 i <> 0L) |> Seq.last
-        f = ub
+        let r = double n |> sqrt |> int64
+        seq {3L..2L..r} 
+        |> Seq.exists(fun i -> n % i = 0L) 
+        |> not
 
 let isPandigital (n:int64) (minDigit:int) (maxDigit:int) =
     let digits = List.unfold(fun a -> if a > 0L then Some(a % 10L, a / 10L) else None ) n

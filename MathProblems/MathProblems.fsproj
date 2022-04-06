@@ -63,6 +63,10 @@
     <Compile Include="P052.fs" />
     <Compile Include="P053.fs" />
     <Compile Include="P054.fs" />
+    <Compile Include="P055.fs" />
+    <Compile Include="P056.fs" />
+    <Compile Include="P057.fs" />
+    <Compile Include="P058.fs" />
     <Compile Include="P067.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

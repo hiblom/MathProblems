@@ -69,6 +69,9 @@
     <Compile Include="P041-060\P058.fs" />
     <Compile Include="P041-060\P059.fs" />
     <Compile Include="P041-060\P060.fs" />
+    <Compile Include="P061.fs" />
+    <Compile Include="P062.fs" />
+    <Compile Include="P063.fs" />
     <Compile Include="P067.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
